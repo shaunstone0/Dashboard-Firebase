@@ -1,13 +1,210 @@
-body {
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #eff2f4;
+  font-family: 'Raleway', sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+/* Color Choices */
+
+:root {
+  --primary-color: #3f6ad8;
+  --dark-color: #2e2e2e;
+  --accent-color: #ebebeb;
+  --grey-color: #fafbfc;
+  --border-color: #e9ecef;
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #6770d2;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+/* Globals */
+
+.large {
+  font-size: 25px;
+}
+
+.small {
+  font-size: 14px;
+}
+.header {
+  height: 50px;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-text {
+  padding: 10px;
+}
+
+.header-icon {
+  opacity: 10%;
+  font-size: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.blue {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.green {
+  color: #6ad29d;
+}
+
+.shadow {
+  -webkit-box-shadow: -1px -10px 37px -4px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: -1px -10px 37px -4px rgba(0, 0, 0, 0.48);
+  box-shadow: -1px -10px 37px -4px rgba(0, 0, 0, 0.48);
+}
+
+.card-shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-even {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-left {
+  justify-content: flex-start;
+}
+.justify-right {
+  justify-content: flex-end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* Margin */
+
+.my {
+  margin-right: 5px;
+}
+
+/* Navbar */
+.logo {
+  padding: 0 15px 0 15px;
+  height: 100%;
+  font-size: 19px;
+}
+
+.logo-icon {
+  margin: 0 0 5px 2px;
+}
+.nav-bar {
+  padding: 0 10px 0 10px;
+  background-color: #fafbfc;
+  width: 100%;
+  height: 60px;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+}
+.side-nav {
+  background-color: #ffffff;
+  padding: 65px 5px 5px 5px;
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  z-index: 1;
+}
+
+/* Footer */
+.footer {
+  background: var(--accent-color);
+  position: relative;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+}
+
+/* Loader */
+
+.loader {
+  font-size: 70px;
+  color: var(--primary-color);
+  background: #ffffff;
+  height: 100vh;
+  width: 100%;
+}
+
+.spinner {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  background: url(/link/to/your/image);
+  background-size: 100%;
 }

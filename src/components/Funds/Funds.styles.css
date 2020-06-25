@@ -1,0 +1,137 @@
+/* Funds List */
+.funds-container {
+  margin: 20px 0 0 255px;
+  padding: 20px;
+  background: #fff;
+  width: 80%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+.funds-table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  font-size: 12px;
+}
+
+.funds-table th {
+  font-size: 13px;
+  padding: 10px 10px 10px 5px;
+  text-align: left;
+  border: 1px solid var(--border-color);
+}
+
+.funds-table td {
+  padding: 8px 0 8px 10px;
+  border: 1px solid var(--border-color);
+}
+
+.funds-table tr:nth-of-type(even) {
+  background-color: #f0f0f0;
+}
+
+.funds-table tr:hover {
+  background-color: #e0f3ff;
+}
+
+.top-pagination {
+  margin: 20px 0 0 0;
+}
+
+.pagination {
+  padding: 10px;
+  font-size: 13px;
+}
+
+.pagination button {
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  background: none;
+  padding: 5px;
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+.pagination button:hover {
+  background: var(--accent-color);
+}
+
+.pagination button:nth-child(4) {
+  margin: 0 10px 0 0;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.pagination button:nth-child(1) {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.page-input input {
+  border: 1px solid var(--border-color);
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 0 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.page-input {
+  font-size: 13px;
+  margin: 0 0 10px 10px;
+  font-size: 12px;
+}
+
+.top-pagination select {
+  border: 1px solid var(--border-color);
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.entries-input {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+}
+
+.pageinfo-container {
+  padding: 10px;
+}
+
+.page {
+  font-size: 13px;
+}
+
+.search-input {
+  border: 1px solid var(--border-color);
+  height: 30px;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.search-icon {
+  border: 1px solid var(--border-color);
+  margin: 0 0 10px 0;
+  height: 30px;
+  width: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: rgb(214, 214, 214);
+}

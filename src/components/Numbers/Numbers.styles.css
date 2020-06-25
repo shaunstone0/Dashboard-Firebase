@@ -1,0 +1,43 @@
+.numbers {
+  height: 75px;
+  width: 80%;
+  border-radius: 5px;
+  margin: 100px 0 10px 255px;
+  color: var(--white);
+}
+
+.number-item {
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  background: var(--white);
+  color: var(--dark);
+  margin: 0 0 0 15px;
+  width: 250px;
+}
+
+.number-item:first-child {
+  margin: 0;
+}
+
+.box {
+  height: 60px;
+  width: 75px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 30px;
+  margin: 0 10px 0 0;
+  color: var(--white);
+}
+
+.records {
+  background: var(--orange);
+}
+
+.records-ready {
+  background: var(--green);
+}
+
+.alert {
+  background: var(--red);
+}
