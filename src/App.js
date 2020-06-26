@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { withFirebase } from './components/Firebase';
-import Funds from './components/Funds/Funds';
 import NavBar from './components/Navbar/NavBar';
-import NavBarSide from './components/Navbar/NavBarSide';
 import Footer from './components/Footer/Footer';
-import Numbers from './components/Numbers/Numbers';
 import Loader from './components/Loader/Loader';
+
+import Dashboard from './components/Dashboard/Dashboard';
+
+// Font Awesome Library
 import {
   fas,
   faRunning,
@@ -18,9 +20,10 @@ import {
   faSearch,
   faTable,
   faExclamation,
+  faSortDown,
+  faSortUp,
 } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
-
 library.add(
   fas,
   faRunning,
@@ -32,8 +35,12 @@ library.add(
   faStepForward,
   faSearch,
   faTable,
-  faExclamation
+  faExclamation,
+  faSortDown,
+  faSortUp
 );
+
+// End Font Awesome Library
 
 const App = (props) => {
   const [funds, setFunds] = useState([]);
@@ -62,16 +69,21 @@ const App = (props) => {
     return <Loader />;
   }
 
+  const defaultContainer = () => (
+    <div className='flex flex-column p'>
+      <Dashboard funds={funds} loading={loading} />
+    </div>
+  );
+
   return (
     <div className='page-container'>
       <div className='content-wrap'>
-        <NavBar />
-        <NavBarSide funds={funds} />
-        <div className='flex flex-column align-center'>
-          <Numbers funds={funds} />
-          <Funds funds={funds} loading={loading} />
-        </div>
+        <Router>
+          <NavBar />
+          <Route component={defaultContainer} />
+        </Router>
       </div>
+
       <Footer />
     </div>
   );

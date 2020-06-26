@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { useTable, usePagination, useFilters } from 'react-table';
+import { useTable, usePagination, useFilters, useSortBy } from 'react-table';
 import './Funds.styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Search from './SearchFunds';
@@ -72,7 +72,9 @@ const FundsList = ({ funds, allFunds }) => {
       data,
       initialState: { pageIndex: 0 },
     },
+
     useFilters,
+    useSortBy,
     usePagination
   );
 
@@ -111,7 +113,20 @@ const FundsList = ({ funds, allFunds }) => {
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
-                <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+                <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                  {column.render('Header')}
+                  <span style={{ margin: '0px 0px 0px 60px' }}>
+                    {column.isSorted ? (
+                      column.isSortedDesc ? (
+                        <FontAwesomeIcon icon='sort-up' />
+                      ) : (
+                        <FontAwesomeIcon icon='sort-down' />
+                      )
+                    ) : (
+                      ''
+                    )}
+                  </span>
+                </th>
               ))}
             </tr>
           ))}

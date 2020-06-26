@@ -18,13 +18,25 @@ class Firebase {
   constructor() {
     app.initializeApp(config);
     this.db = app.database();
-    this.googleProvider = new app.auth.GoogleAuthProvider();
     this.auth = app.auth();
   }
 
   // Authentication
-  doSignInWithGoogle = () => this.auth.signInWithPopup(this.googleProvider);
+  doCreateUser = (email, password) =>
+    this.auth.createUserWithEmailAndPassword(email, password);
+  doSignIn = (email, password) =>
+    this.auth
+      .signInWithEmailAndPassword(email, password)
+      .catch(function (error) {
+        console.log(error);
+      });
+
   doSignOut = () => this.auth.signOut();
+
+  doPasswordReset = (email) => this.auth.sendPasswordResetEmail(email);
+
+  doPasswordUpdate = (password) =>
+    this.auth.currentUser.updatePassword(password);
 
   // Database
   funds = () => this.db.ref('funds/parsedItem');

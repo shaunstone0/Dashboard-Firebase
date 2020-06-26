@@ -142,13 +142,29 @@ body {
 }
 
 /* Margin */
+.nav-margin {
+  margin-top: 200px;
+}
 
 .my {
   margin-right: 5px;
 }
 
+/* Padding */
+
+.p {
+  padding: 20px;
+}
+
 /* Navbar */
 .logo {
+  padding: 0 15px 0 15px;
+  height: 100%;
+  font-size: 19px;
+}
+
+.logo-light {
+  color: var(--white);
   padding: 0 15px 0 15px;
   height: 100%;
   font-size: 19px;
@@ -159,7 +175,7 @@ body {
 }
 .nav-bar {
   padding: 0 10px 0 10px;
-  background-color: #fafbfc;
+  background-color: var(--grey-color);
   width: 100%;
   height: 60px;
   left: 0;
@@ -167,32 +183,43 @@ body {
   z-index: 2;
 }
 .side-nav {
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 65px 5px 5px 5px;
   height: 100vh;
   width: 250px;
   position: fixed;
   left: 0;
-  background: #ffffff;
+  background: var(--white);
   border: 1px solid var(--border-color);
   z-index: 1;
 }
 
 /* Footer */
 .footer {
-  background: var(--accent-color);
+  background: var(--gray-dark);
   position: relative;
   bottom: 0;
   height: 50px;
   width: 100%;
+  padding: 10px;
+  color: var(--white);
+  font-size: 14px;
 }
 
+.footer a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--gray);
+}
 /* Loader */
 
 .loader {
   font-size: 70px;
   color: var(--primary-color);
-  background: #ffffff;
+  background: var(--white);
   height: 100vh;
   width: 100%;
 }
@@ -205,6 +232,5 @@ body {
   left: 50%;
   margin-left: -50px;
   margin-top: -50px;
-  background: url(/link/to/your/image);
   background-size: 100%;
 }

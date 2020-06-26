@@ -17,8 +17,10 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-light-accordion": "^0.1.4",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-table": "^7.2.1",
+    "recompose": "^0.30.0",
     "typescript": "^3.9.5"
   },
   "scripts": {

@@ -1,8 +1,8 @@
 .numbers {
-  height: 75px;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   border-radius: 5px;
-  margin: 100px 0 10px 255px;
+  margin: 100px 0 10px 0px;
   color: var(--white);
 }
 
@@ -14,6 +14,14 @@
   color: var(--dark);
   margin: 0 0 0 15px;
   width: 250px;
+}
+
+.date-item {
+  border-radius: 5px;
+  padding: 27px;
+  background: url(../../img/backgrounds/numbers-background.jpg);
+  width: 50%;
+  margin: 0 0 0 15px;
 }
 
 .number-item:first-child {
