@@ -108,44 +108,46 @@ const FundsList = ({ funds, allFunds }) => {
           </select>
         </div>
       </div>
-      <table {...getTableProps()} className='funds-table'>
-        <thead>
-          {headerGroups.map((headerGroup) => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map((column) => (
-                <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-                  {column.render('Header')}
-                  <span style={{ margin: '0px 0px 0px 60px' }}>
-                    {column.isSorted ? (
-                      column.isSortedDesc ? (
-                        <FontAwesomeIcon icon='sort-up' />
+      <div className='table-container'>
+        <table {...getTableProps()} className='funds-table'>
+          <thead>
+            {headerGroups.map((headerGroup) => (
+              <tr {...headerGroup.getHeaderGroupProps()}>
+                {headerGroup.headers.map((column) => (
+                  <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                    {column.render('Header')}
+                    <span style={{ margin: '0px 0px 0px 60px' }}>
+                      {column.isSorted ? (
+                        column.isSortedDesc ? (
+                          <FontAwesomeIcon icon='sort-up' />
+                        ) : (
+                          <FontAwesomeIcon icon='sort-down' />
+                        )
                       ) : (
-                        <FontAwesomeIcon icon='sort-down' />
-                      )
-                    ) : (
-                      ''
-                    )}
-                  </span>
-                </th>
-              ))}
-            </tr>
-          ))}
-        </thead>
-        <tbody {...getTableBodyProps()}>
-          {page.map((row, i) => {
-            prepareRow(row);
-            return (
-              <tr {...row.getRowProps()}>
-                {row.cells.map((cell) => {
-                  return (
-                    <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-                  );
-                })}
+                        ''
+                      )}
+                    </span>
+                  </th>
+                ))}
               </tr>
-            );
-          })}
-        </tbody>
-      </table>
+            ))}
+          </thead>
+          <tbody {...getTableBodyProps()}>
+            {page.map((row, i) => {
+              prepareRow(row);
+              return (
+                <tr {...row.getRowProps()}>
+                  {row.cells.map((cell) => {
+                    return (
+                      <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
       <div className='pageinfo-container flex justify-center'>
         <span className='page'>
           <strong>

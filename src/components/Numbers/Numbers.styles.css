@@ -28,6 +28,19 @@
   margin: 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .numbers {
+    flex-direction: column-reverse;
+  }
+
+  .number-item {
+    margin: 10px 0 0 0;
+  }
+
+  .number-item:first-child {
+    margin: 10px 0 0 0;
+  }
+}
 .box {
   height: 60px;
   width: 75px;
