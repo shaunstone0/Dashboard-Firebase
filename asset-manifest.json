@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Dashboard-Firebase/static/css/main.5c5e5f9e.chunk.css",
-    "main.js": "/Dashboard-Firebase/static/js/main.6a946ef6.chunk.js",
-    "main.js.map": "/Dashboard-Firebase/static/js/main.6a946ef6.chunk.js.map",
+    "main.css": "/Dashboard-Firebase/static/css/main.f7f85195.chunk.css",
+    "main.js": "/Dashboard-Firebase/static/js/main.cde2685c.chunk.js",
+    "main.js.map": "/Dashboard-Firebase/static/js/main.cde2685c.chunk.js.map",
     "runtime-main.js": "/Dashboard-Firebase/static/js/runtime-main.ab830dcd.js",
     "runtime-main.js.map": "/Dashboard-Firebase/static/js/runtime-main.ab830dcd.js.map",
     "static/js/2.6b79c7eb.chunk.js": "/Dashboard-Firebase/static/js/2.6b79c7eb.chunk.js",
     "static/js/2.6b79c7eb.chunk.js.map": "/Dashboard-Firebase/static/js/2.6b79c7eb.chunk.js.map",
     "index.html": "/Dashboard-Firebase/index.html",
-    "precache-manifest.eddb580535b6ce1323e6362daeab837c.js": "/Dashboard-Firebase/precache-manifest.eddb580535b6ce1323e6362daeab837c.js",
+    "precache-manifest.775a47012e7a2d8b48b6fea4670727ea.js": "/Dashboard-Firebase/precache-manifest.775a47012e7a2d8b48b6fea4670727ea.js",
     "service-worker.js": "/Dashboard-Firebase/service-worker.js",
-    "static/css/main.5c5e5f9e.chunk.css.map": "/Dashboard-Firebase/static/css/main.5c5e5f9e.chunk.css.map",
+    "static/css/main.f7f85195.chunk.css.map": "/Dashboard-Firebase/static/css/main.f7f85195.chunk.css.map",
     "static/js/2.6b79c7eb.chunk.js.LICENSE.txt": "/Dashboard-Firebase/static/js/2.6b79c7eb.chunk.js.LICENSE.txt",
     "static/media/Numbers.styles.css": "/Dashboard-Firebase/static/media/numbers-background.701d76c0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ab830dcd.js",
     "static/js/2.6b79c7eb.chunk.js",
-    "static/css/main.5c5e5f9e.chunk.css",
-    "static/js/main.6a946ef6.chunk.js"
+    "static/css/main.f7f85195.chunk.css",
+    "static/js/main.cde2685c.chunk.js"
   ]
 }

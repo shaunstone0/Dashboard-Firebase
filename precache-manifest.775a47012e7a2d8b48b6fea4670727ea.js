@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d0861cb0c6f02b9946f22ffbe3b8534",
+    "revision": "ba11fb1fed1936414253aec8fbd1ed9a",
     "url": "/Dashboard-Firebase/index.html"
   },
   {
-    "revision": "b43f7c63620281005a96",
-    "url": "/Dashboard-Firebase/static/css/main.5c5e5f9e.chunk.css"
+    "revision": "f5771dc79cb57cc58cbd",
+    "url": "/Dashboard-Firebase/static/css/main.f7f85195.chunk.css"
   },
   {
     "revision": "f3b6c39295c7fc99d328",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Dashboard-Firebase/static/js/2.6b79c7eb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b43f7c63620281005a96",
-    "url": "/Dashboard-Firebase/static/js/main.6a946ef6.chunk.js"
+    "revision": "f5771dc79cb57cc58cbd",
+    "url": "/Dashboard-Firebase/static/js/main.cde2685c.chunk.js"
   },
   {
     "revision": "1c4b9a83fc1836b38bc3",
